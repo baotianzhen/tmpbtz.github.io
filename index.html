@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
   <link rel="stylesheet" type="text/css" href="../font-awesome-4.2.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Monda:400|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Bangers|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -22,16 +22,16 @@
   </header>
 
   <!--BLOG POSTS-->
-  <section>
+    <section>
       <div class="col1">  
         <ul class="stamp">
-          <li>4 Jan 2014</li>
-          <li><time>22:11 EST</time></li>
-          <li>DBC P0U1W2</li> 
+          <li>11 Jan 2015</li>
+          <li><time>17:42 EST</time></li>
+          <li>DBC P0U1W3</li> 
           <li>Cultural Blog</li>
         </ul>
         <ul class="keywords">
-            <li>Box Model</li>
+            <li>HTLM/CSS</li>
             <li>Margin</li>
             <li>Border</li>
             <li>Padding</li>
@@ -65,6 +65,51 @@
     </article>
   </section>
 
+<!---             ARTICLE BREAK             -->
+  
+  <section>
+      <div class="col1">  
+        <ul class="stamp">
+          <li>4 Jan 2015</li>
+          <li><time>22:11 EST</time></li>
+          <li>DBC P0U1W2</li> 
+          <li>Cultural Blog</li>
+        </ul>
+        <ul class="keywords">
+            <li>HTML/CSS</li>
+            <li>Margin</li>
+            <li>Border</li>
+            <li>Padding</li>
+       </div>
+       
+        <article class="col2">
+          <h1 class="subject" id="t2-css-design.html">Margins, Borders, and Padding...Oh My!</h1>
+          <p class="post">
+              When writing a webpage in HTML, it is vital to understand the "Box Model". The fancy name and the aura of mystery that surround this concept may make the idea seem unapproachable at first, but with a little bit of straight talk and simple visualization, you'll be on your way to working with this core concept in no time.
+          </p>
+          <p class="post">
+              Think of the very edge of your webpage as a large rectangular canvas. Everything you see on your webpage must go on the canvas, and everything that makes it onto the final painting - be it text, photos, icons, etc. - everything is contained within smaller rectangles that fit on the canvas. These smaller boxes can hug the very edes of the text and may be invisible, but even when you can't see them, trust me - they're there. 
+          </p>
+          <p class="post">
+              Whether you can see these rectangles (whether they have a color or an outline), is dependent on how you define these boxes, and there are really only three things that you need to worry about defining when you're first starting out: Margin, Border, and Padding. Let's go back to our canvas now and smack in the middle, we're going to start painting: to be precise, I want you to paint an image of a framed photograph. What are the different things you'll need to paint? Obviously, you'll need to paint the frame - will it be a thick frame? What color will the frame be? We will also need to paint the photo: will it be one of those frames where there is a plain white buffer inside the frame between the frame and the photo? Will the photo go to the edges of the frame?
+          </p>
+          <p class="post">
+              Objects inside the Box Model are just like that: the objects in your webpage are all just painting of framed objects (a moment ago that object was a photograph, but it could also be text, a paragraph of text, a movie, viewer, etc.). The only difference is that in HTML we don't call the frames "frames", we call them "borders"; and we don't call that buffer zone between the frame and the object it frames a "buffer", we call it "Padding". You'll be wondering about that last term I haven't mentioned, "Margin", and this is essentially the same idea as padding, except whereas padding is defined as the space between the frame and what is inside the frame, "margins" are just the space between the edges of the frame and anything else that is painted on the larger canvas. We could leave 5 inches between the border (or the frame) and everything else on the canvas, and that would be us defining "margin" as "5 inches". Although we don't use inches to meaure space, we use screen pixels, which is written as "px".
+          </p>
+          <p class="post">
+              Now remember - all the borders (or all the frames) must be in the shape of a rectangle. And, as you'll remember, every rectangle has four sides. Now, since webpages are only viewed one way (or at least they normally aren't viewed upside down), we define those four sides very sensibly: top, right, bottom, and left - and we always talk about them in that order. We can define them all at once (e.g. margin: 5px) or define them each individually (e.g border-left: 20px).
+          </p>
+          <img id="img_frame" src="../frame.png" alt="">
+          <p class="post">
+            This is a real picture frame. Do you see the frame? That's our "Border" - we can make it as thick or thin as we want; we can make it dashed or solid; we can make it any color in the spectrum of light. Do you see the off-white buffer? That's our "Padding" - again, we can make it as thick or thin as we want (it can be 0px or 100px). That white space in the middle would be our object, but we'll leave that discussion for a different time. Do you see the space between the edge of the border and the text above it? That's our margin - and here again, we can make it as large are small as we want. Suffice it to say, that everything on your webpage - everything - has one of these, whether you see it or not! Here are a few more examples, and the code that defines each:
+          </p>
+          <img id="img_frame" src="../3boxes.png" alt="">
+          <p class="post">
+            Let's start with Box 1. The black "border" is 10px thick on all sides. You can see that there's no space between the border and the yellow contents, which means that the padding is 0px all the way around. But what about the margin? The margin between the top of the Box 1 object box is much larger than the margin on the right side, that is, the margin separating Box 1 from Box 2. Box 2's black border is much thicker (30px to be exact) and it has a large white padding space (50px) between the border and the yellow object. Box 3 is almost the same as Box 2, but the big difference is that margins - the margin between the edge of the Box 3 frame and the other boxes is much larger than that between Box 1 and Box 2. Further the margin between the Box 3 frame and this paragraph is much larger than between the last paragraph and Box 2. 
+          </p>
+    </article>
+  </section>
+<!---             ARTICLE BREAK             -->
   <section>
       <div class="col1">  
         <ul class="stamp">
@@ -178,7 +223,7 @@
     </article>
   </section>
 
-  <!--FOOTER-->
+  <!-FOOTER-->
     <footer class="social">
       <div class="content">
       <ul class="icons">
