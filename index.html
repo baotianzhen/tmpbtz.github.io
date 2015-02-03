@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
   <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -55,6 +55,55 @@
           <p class="post">
           </p>
           <p class="post">
+          </p>
+    </article>
+  </section>
+
+<!---             ARTICLE BREAK             -->
+
+    <section>
+      <div class="col1">  
+        <ul class="stamp">
+          <li>29 Jan 2015</li>
+          <li><time>17:42 EST</time></li>
+          <li>DBC P0U1W3</li> 
+          <li>Technical Blog</li>
+        </ul>
+        <ul class="keywords">
+            <li>Data</li>
+            <li>Ruby</li>
+            <li>Arrays</li>
+            <li>Hashes</li>
+       </div>
+       
+        <article class="col2">
+          <h1 class="subject" id="t3-arrays-hash">Pills & Hash</h1>
+          <p class="post">
+            Software developer, web developer, app developer, investment banker, asset manager, buget officer, compliance officer - pick most any major employment vertical -  the majority of these professions could be generally be summed up thus: professional data manipulator. Obviously, each have their own character, unique challenges, and structures of thought - but at the core they are just that. Indeed, few would could contest that such professionals will spend a majority of their work day "at the computer" -  that's really just a euphemism we've developed for "manipulating data".
+          </p>
+          <p class="post">
+            Of course, the level at which we interact with the data we are manipulating differs radically between professions - the journalist sleuthing on the web and writing in a word processor hardly considers the data underlying those actions; whereas the banker who professionally manipulates spreadsheets is certainly more aware of the data being manipulated (even if unaware that Excel may not be the right tool for every task). The software developer, in the course of...errr, devloping software, is aware of (or at least acknowledges) most levels of data in play that are interpretable by humans.
+          </p>
+          <p class="post">
+            The developer's necessarily more comprehensive understanding of the data in play begins at a very low level - down where actions are represented by integers and alphanumeric codes. There's a lot of data down there, and keeping it straight can be a challenge. How to keep track of all the names, codes and values they represent? Further - how to organize it all?
+          </p>
+          <p class="post">
+            The most fundamental method to organize this information is quite intuitive - separate it into containers. Apples with the apples and oranges with the oranges; put the letters of the alphabet in the 'alphabet container', and the numeric codes for the world's airports in the 'airport code container'. 
+          </p>
+          <p class="post">
+            Enter the mighty Array: a container for grouping data. Think of Arrays like weekly pill boxes - you know the ones with separate compartments for 'S, M, T, W, T, F'? Arrays are just like that, but instead of the initials of the days of the week marking the contents of a certain compartment, we just use '0, 1, 2, 3, ...' on into infinity (this bears repeating: the first number in an Array index is zero - 1 is second, 2 is third, etc.) Every object in an Array container has a index code - one each, no repeats, no sharing. These indexed 'objects' then can be anything you'd like too: other numbers, names of countries, colors...and...err... other arrays. 
+          </p>
+          <p class="post">
+          That last bit isn't as unintuitive as you think. Once you've organized all that data, you're still likely to have a whole lot of 'potentially-infinitely-large-numerically-indexed-base-zero pill boxes' - you're going to need a way of organizing these too. Say you're putting pills together for different residents at different retirement homes - you don't want the pills for residents at different homes all mixed together. What to do? It's obvious - glue cardboard boxes together to make a really big pill box. You've just made an Array of Arrays! Congratulations!
+          </p>
+          <p class="post">
+          The only problem with this, of course, is that now we'll need to assign a number to each resident, and we'll need a container that indexes names. We'll come back to this in a moment. Let's first turn to that 'aiport code container' example used three paragraphs back (see the last sentence). What use is indexing the alphanumeric codes for airports in an Array? Unless you live in the United States, you're probably not going to be able to divine the fact that 'ORD' represents Chicago O'Hare International Airport from an arbitrarily assigned index number. And if you do live in the U.S., you likely weren't aware that PVG is the airport code for Shanghai's Pudong International Airport. What to do? Enter the mighty Hash. Conceptually, Hash containers (hashes) have a lot in common with arrays: they organize single pieces of information. The big difference, however, is that hashes don't necessarily use numerical indices starting with zero to keep track of that information (the way Arrays do and necessarily must); instead, Hashes can pair the values in question (airport codes) with any other kind of value. In the case of airport codes, the sensible keyword to use in place of a numerical index would clearly be the airport's full name. 
+          </p>
+          <p class="post">
+          So what does this mean for the pharmaceutical supplier for the pill-popping residents of the retirement community? At the highest level, it means the large cardboard-pill-box likely won't be labelled '0, 1, 2, 3' - instead, we would use something like the communties' names (e.g. 'Sunrise Living', 'Blue Lagoon Community', 'Arkham Residential Institute', etc.). And instead of labelling the normal-sized pill boxes contained in each cardboard box, why don't we just label each box with the resident's name? And each of the week's compartents with the standard days of the week? We can even organize the pills scheduled for popping each day, but they can be left in an Array (Hashes can contain other Hashes, and other Arrays, and vice-versa) - we'll just label the pills starting with number 0.
+          </p>
+          <p class="post">
+            Arrays and Hashes are extremely powerful tools for organizing data and can be of huge utility when arranging that information in hierarchical structures. Just remember: do not ingest on an empty stomach or while operating heavy machinery.
           </p>
     </article>
   </section>
@@ -198,54 +247,6 @@
   </section>
 
 <!---             ARTICLE BREAK             -->
-    <section>
-      <div class="col1">  
-        <ul class="stamp">
-          <li>11 Jan 2015</li>
-          <li><time>17:42 EST</time></li>
-          <li>DBC P0U1W3</li> 
-          <li>Technical Blog</li>
-        </ul>
-        <ul class="keywords">
-            <li>Data</li>
-            <li>Ruby</li>
-            <li>Arrays</li>
-            <li>Hashes</li>
-       </div>
-       
-        <article class="col2">
-          <h1 class="subject" id="t3-arrays-hash">Pills & Hash</h1>
-          <p class="post">
-            Software developer, web developer, app developer, investment banker, asset manager, buget officer, compliance officer - pick most any major employment vertical -  the majority of these professions could be generally be summed up thus: professional data manipulator. Obviously, each have their own character, unique challenges, and structures of thought - but at the core they are just that. Indeed, few would could contest that such professionals will spend a majority of their work day "at the computer" -  that's really just a euphemism we've developed for "manipulating data".
-          </p>
-          <p class="post">
-            Of course, the level at which we interact with the data we are manipulating differs radically between professions - the journalist sleuthing on the web and writing in a word processor hardly considers the data underlying those actions; whereas the banker who professionally manipulates spreadsheets is certainly more aware of the data being manipulated (even if unaware that Excel may not be the right tool for every task). The software developer, in the course of...errr, devloping software, is aware of (or at least acknowledges) most levels of data in play that are interpretable by humans.
-          </p>
-          <p class="post">
-            The developer's necessarily more comprehensive understanding of the data in play begins at a very low level - down where actions are represented by integers and alphanumeric codes. There's a lot of data down there, and keeping it straight can be a challenge. How to keep track of all the names, codes and values they represent? Further - how to organize it all?
-          </p>
-          <p class="post">
-            The most fundamental method to organize this information is quite intuitive - separate it into containers. Apples with the apples and oranges with the oranges; put the letters of the alphabet in the 'alphabet container', and the numeric codes for the world's airports in the 'airport code container'. 
-          </p>
-          <p class="post">
-            Enter the mighty Array: a container for grouping data. Think of Arrays like weekly pill boxes - you know the ones with separate compartments for 'S, M, T, W, T, F'? Arrays are just like that, but instead of the initials of the days of the week marking the contents of a certain compartment, we just use '0, 1, 2, 3, ...' on into infinity (this bears repeating: the first number in an Array index is zero - 1 is second, 2 is third, etc.) Every object in an Array container has a index code - one each, no repeats, no sharing. These indexed 'objects' then can be anything you'd like too: other numbers, names of countries, colors...and...err... other arrays. 
-          </p>
-          <p class="post">
-          That last bit isn't as unintuitive as you think. Once you've organized all that data, you're still likely to have a whole lot of 'potentially-infinitely-large-numerically-indexed-base-zero pill boxes' - you're going to need a way of organizing these too. Say you're putting pills together for different residents at different retirement homes - you don't want the pills for residents at different homes all mixed together. What to do? It's obvious - glue cardboard boxes together to make a really big pill box. You've just made an Array of Arrays! Congratulations!
-          </p>
-          <p class="post">
-          The only problem with this, of course, is that now we'll need to assign a number to each resident, and we'll need a container that indexes names. We'll come back to this in a moment. Let's first turn to that 'aiport code container' example used three paragraphs back (see the last sentence). What use is indexing the alphanumeric codes for airports in an Array? Unless you live in the United States, you're probably not going to be able to divine the fact that 'ORD' represents Chicago O'Hare International Airport from an arbitrarily assigned index number. And if you do live in the U.S., you likely weren't aware that PVG is the airport code for Shanghai's Pudong International Airport. What to do? Enter the mighty Hash. Conceptually, Hash containers (hashes) have a lot in common with arrays: they organize single pieces of information. The big difference, however, is that hashes don't necessarily use numerical indices starting with zero to keep track of that information (the way Arrays do and necessarily must); instead, Hashes can pair the values in question (airport codes) with any other kind of value. In the case of airport codes, the sensible keyword to use in place of a numerical index would clearly be the airport's full name. 
-          </p>
-          <p class="post">
-          So what does this mean for the pharmaceutical supplier for the pill-popping residents of the retirement community? At the highest level, it means the large cardboard-pill-box likely won't be labelled '0, 1, 2, 3' - instead, we would use something like the communties' names (e.g. 'Sunrise Living', 'Blue Lagoon Community', 'Arkham Residential Institute', etc.). And instead of labelling the normal-sized pill boxes contained in each cardboard box, why don't we just label each box with the resident's name? And each of the week's compartents with the standard days of the week? We can even organize the pills scheduled for popping each day, but they can be left in an Array (Hashes can contain other Hashes, and other Arrays, and vice-versa) - we'll just label the pills starting with number 0.
-          </p>
-          <p class="post">
-            Arrays and Hashes are extremely powerful tools for organizing data and can be of huge utility when arranging that information in hierarchical structures. Just remember: do not ingest on an empty stomach or while operating heavy machinery.
-          </p>
-    </article>
-  </section>
-
-<!---             ARTICLE BREAK             -->
   
   <section>
       <div class="col1">  
@@ -359,7 +360,7 @@
     </article>
   </section>
 
-  <section>
+ <!--  <section>
       <div class="col1">  
         <ul class="stamp">
           <li>14 Dec 2014</li>
@@ -401,7 +402,7 @@
               3) To collaborate with numerous involved parties in potentially widely dispersed geographic locations
           </p>
     </article>
-  </section>
+  </section> -->
 
   <!-FOOTER-->
     <footer class="social">
